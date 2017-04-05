@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './App.css'
 
-var videoURL = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8";
+const title = "Starkey Customer List"
 
 export default class App extends React.Component {
     componentWillMount() {
@@ -12,7 +12,11 @@ export default class App extends React.Component {
     render() {
         return (
             <div className={styles.container}>
-                <div className={styles.hello}>Hello Conan</div>
+                <div className={styles.title}>{title}</div>
+                <div>
+                    <div>Hello</div>
+                    <div>Hello2</div>
+                </div>
             </div>
         );
     }

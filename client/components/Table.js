@@ -5,7 +5,7 @@ var CustomerTable = React.createClass({
 
   render: function() {
     return (
-      <div />
+      <div>Hello</div>
     );
   }
 
