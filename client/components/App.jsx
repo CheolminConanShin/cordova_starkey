@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './App.css'
+import CustomerTable from './CustomerTable'
 
 const title = "Starkey Customer List"
 
@@ -14,8 +15,7 @@ export default class App extends React.Component {
             <div className={styles.container}>
                 <div className={styles.title}>{title}</div>
                 <div>
-                    <div>Hello</div>
-                    <div>Hello2</div>
+                    <CustomerTable/>
                 </div>
             </div>
         );
