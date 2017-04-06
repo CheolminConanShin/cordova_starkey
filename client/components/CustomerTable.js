@@ -6,18 +6,27 @@ const dummySentences = ['Lorem ipsum dolor sit amet, consectetuer adipiscing eli
 const gridInstance = (
   <Grid>
     <Row className="show-grid">
-      <Col lgHidden={true}><code>&lt;hidden when display size is large /&gt;</code><br/>{dummySentences.slice(0, 2).join(' ')}</Col>
-      <Col mdHidden={true}><code>&lt;hidden when display size is medium /&gt;</code><br/>{dummySentences.slice(0, 2).join(' ')}</Col>
-      <Col smHidden={true}><code>&lt;hidden when display size is small /&gt;</code><br/>{dummySentences.slice(0, 2).join(' ')}</Col>
-      <Col xsHidden={true}><code>&lt;hidden when display size is x-small /&gt;</code><br/>{dummySentences.slice(0, 2).join(' ')}</Col>
+      <Col xs={2} lg={2}>이름</Col>
+      <Col xs={2} lg={2}>가입일</Col>
+      <Col xs={4} lg={4}>주소</Col>
+      <Col xs={2} lg={2}>집</Col>
+      <Col xs={2} lg={2}>핸드폰</Col>
     </Row>
   </Grid>
 );
 
+const tableInstance = (
+  <div className="row">
+    <div className="col-xs-4" style={{"background-color:lavender"}}>.col-sm-4</div>
+    <div className="col-xs-4" style={{background-color:"lavenderblush"}}>.col-sm-4</div>
+    <div className="col-xs-4" style={{background-color:"lavender"}}>.col-sm-4</div>
+  </div>
+)
+
 var CustomerTable = React.createClass({
 
   render: function() {
-    return gridInstance;
+    return tableInstance;
   }
 
 });

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './App.css'
 import CustomerTable from './CustomerTable'
 
-const title = "Starkey Customer List"
+const title = "고객 리스트"
 
 export default class App extends React.Component {
     componentWillMount() {
