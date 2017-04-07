@@ -23,7 +23,7 @@ module.exports = {
     devServer: {
         publicPath: "/",
         contentBase: "./www",
+        historyApiFallback: true
     },
     plugins: [HtmlWebpackPluginConfig]
 }
-
