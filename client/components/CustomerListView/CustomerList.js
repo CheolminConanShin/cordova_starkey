@@ -2,6 +2,7 @@ var React = require('react');
 var PropTypes = React.PropTypes;
 import {Grid, Row, Col, Clearfix} from 'react-bootstrap'
 import Header from './Header'
+import Firebase from '../../connector/Firebase';
 
 var styles = {
   color1: {
@@ -14,18 +15,6 @@ var styles = {
     margin: "3%"
   }
 }
-
-const gridInstance = (
-  <Grid>
-    <Row className="show-grid">
-      <Col xs={2} lg={2}>이름</Col>
-      <Col xs={2} lg={2}>가입일</Col>
-      <Col xs={4} lg={4}>주소</Col>
-      <Col xs={2} lg={2}>집</Col>
-      <Col xs={2} lg={2}>핸드폰</Col>
-    </Row>
-  </Grid>
-);
 
 const tableInstance = (
   <div style={styles.margin}>
@@ -48,11 +37,16 @@ const tableInstance = (
 )
 
 var CustomerTable = React.createClass({
-
-  render: function() {
+  render() {
     return tableInstance;
-  }
+  },
 
+  componentDidMount() {
+    Firebase.reference.once("value", snapshot => {
+      const store = snapshot.val();
+      console.log(store);
+    })
+  }
 });
 
 module.exports = CustomerTable;
