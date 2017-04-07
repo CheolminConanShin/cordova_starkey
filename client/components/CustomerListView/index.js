@@ -9,7 +9,7 @@ var styles = {
     color: "white",
     backgroundColor: "rgb(86, 86, 86)",
     borderRadius: "25px",
-    margin: "3% 10% 3% 10%",
+    margin: "0% 7% 3% 7%",
     padding: "10px 20px 10px 20px",
     fontSize: "4vw",
     textAlign: "center"
@@ -18,7 +18,8 @@ var styles = {
     position: "fixed",
     width: "100%",
     height: "100%",
-    backgroundColor: "rgb(192, 159, 128)"
+    backgroundColor: "rgb(192, 159, 128)",
+    padding: "3%"
   }
 }
 
