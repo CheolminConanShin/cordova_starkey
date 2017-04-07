@@ -3,8 +3,8 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
-import ButtonView from './buttons_view'
-import CustomerListView from './customer_list_view'
+import ButtonView from './ButtonView'
+import CustomerListView from './CustomerListView'
 
 const title = "고객 리스트"
 

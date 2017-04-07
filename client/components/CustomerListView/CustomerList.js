@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 import {Grid, Row, Col, Clearfix} from 'react-bootstrap'
+import Header from './Header'
 
 var styles = {
   color1: {
@@ -8,6 +9,9 @@ var styles = {
   },
   color2: {
     backgroundColor: "lavenderblush"
+  },
+  margin: {
+    margin: "3%"
   }
 }
 
@@ -24,14 +28,8 @@ const gridInstance = (
 );
 
 const tableInstance = (
-  <div>
-    <div className="row">
-      <div className="col-xs-2" style={styles.color1}>name</div>
-      <div className="col-xs-2" style={styles.color2}>date</div>
-      <div className="col-xs-4" style={styles.color1}>address</div>
-      <div className="col-xs-2" style={styles.color2}>telephone</div>
-      <div className="col-xs-2" style={styles.color1}>mobilephone</div>
-    </div>
+  <div style={styles.margin}>
+    <Header/>
     <div className="row">
       <div className="col-xs-2" style={styles.color1}>Conan Shin</div>
       <div className="col-xs-2" style={styles.color2}>2015-11-30</div>

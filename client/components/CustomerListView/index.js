@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomerTable from './customer_list'
+import CustomerTable from './CustomerList'
 
 const title = "고객 리스트"
 
