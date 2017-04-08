@@ -2,21 +2,26 @@ import React, { PropTypes } from 'react'
 
 var styles = {
   size: {
-    width: "30vw",
-    height: "30vw"
+    width: "100vw",
+    height: "25vh",
+    border: 0
   },
   margin: {
-    margin: "10vw"
+    margin: "0"
   },
   font: {
+    color: "white",
     fontSize: "4vw"
+  },
+  background: {
+    backgroundColor: "rgb(70, 93, 114)"
   }
 }
 
 const Button = React.createClass({
   render () {
     return (
-      <button style={Object.assign(styles.size, styles.margin, styles.font)} className="btn btn-primary">{this.props.text}</button>
+      <button style={Object.assign(styles.size, styles.margin, styles.font, styles.background)}>{this.props.text}</button>
     )
   }
 })

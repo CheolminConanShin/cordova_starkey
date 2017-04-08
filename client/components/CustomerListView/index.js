@@ -18,7 +18,7 @@ var styles = {
     position: "fixed",
     width: "100%",
     height: "100%",
-    backgroundColor: "rgb(192, 159, 128)",
+    backgroundColor: "rgb(245, 235, 220)",
     padding: "3%"
   }
 }

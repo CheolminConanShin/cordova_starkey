@@ -1,11 +1,14 @@
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './client/index.html',
     filename: 'index.html',
     inject: 'body'
 })
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPluginConfig = new CopyWebpackPlugin([ {
+  from: './client/assets', to: 'assets'
+} ])
 
 module.exports = {
     entry: './client/index.js',
@@ -25,5 +28,5 @@ module.exports = {
         contentBase: "./www",
         historyApiFallback: true
     },
-    plugins: [HtmlWebpackPluginConfig]
+    plugins: [HtmlWebpackPluginConfig, CopyWebpackPluginConfig]
 }
