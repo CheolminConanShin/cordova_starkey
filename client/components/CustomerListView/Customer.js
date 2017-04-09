@@ -10,7 +10,6 @@ var styles = {
   font: {
     fontSize: "1.7vw",
     fontFamily: "NanumGothic",
-    fontWeight: "bold",
     color: "#555250"
   },
   margin: {

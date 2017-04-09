@@ -34,7 +34,7 @@ export default class CustomerListView extends React.Component {
       const headerContent = <div style={styles.title}>{title}</div>
         return (
             <div style={styles.container}>
-                <ReactSideBar headerContent={headerContent} mainView={CustomerTable} />
+                <ReactSideBar headerContent={title} mainView={CustomerTable} />
             </div>
         );
     }

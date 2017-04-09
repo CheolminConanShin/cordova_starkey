@@ -3,8 +3,8 @@ import React from 'react'
 const styles = {
   floatingButton: {
     position: "fixed",
-    top: "5%",
     left: "2vw",
+    lineHeight: "4vw",
     zIndex: 1
   },
   transparentIcon: {
@@ -15,8 +15,8 @@ const styles = {
     outline:"none"
   },
   iconSize: {
-    width: "5vw",
-    height: "5vw"
+    width: "4vw",
+    height: "4vw"
   }
 }
 

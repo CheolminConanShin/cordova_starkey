@@ -20,7 +20,7 @@
 }
 
 .row {
-  height: 3.5vh;
+  height: 3.5vw;
   display: flex;
   display: -webkit-flex;
   border-bottom: 1px solid #E8E0DC;
