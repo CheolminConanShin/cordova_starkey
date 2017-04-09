@@ -2,13 +2,16 @@ import React from 'react'
 
 var styles = {
   colorLavender: {
-    backgroundColor: "lavender"
+    backgroundColor: "#FFF6F2"
   },
   colorBlush: {
-    backgroundColor: "lavenderblush"
+    backgroundColor: "#FFF6F2"
   },
   font: {
-    fontSize: "2vw"
+    fontSize: "1.7vw",
+    fontFamily: "NanumGothic",
+    fontWeight: "bold",
+    color: "#555250"
   },
   margin: {
     marginBottom: "1%"
@@ -35,12 +38,12 @@ export default class Customer extends React.Component {
 
   render() {
     return(
-      <div className="row" style={this.marginBottom(this.props.index)}>
-        <div className="col-xs-1" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.name}</div>
-        <div className="col-xs-2" style={Object.assign(styles.colorBlush, styles.font, styles.padding )}>{this.props.customer.registrationDate}</div>
-        <div className="col-xs-5" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.address}</div>
-        <div className="col-xs-2" style={Object.assign(styles.colorBlush, styles.font, styles.padding)}>{this.props.customer.phoneNumber}</div>
-        <div className="col-xs-2" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.mobilePhoneNumber}</div>
+      <div className="row equal" style={this.marginBottom(this.props.index)}>
+        <div className="col-xs-1 align-middle" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.name}</div>
+        <div className="col-xs-2 align-middle" style={Object.assign(styles.colorBlush, styles.font, styles.padding )}>{this.props.customer.registrationDate}</div>
+        <div className="col-xs-5 align-middle" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.address}</div>
+        <div className="col-xs-2 align-middle" style={Object.assign(styles.colorBlush, styles.font, styles.padding)}>{this.props.customer.phoneNumber}</div>
+        <div className="col-xs-2 align-middle" style={Object.assign(styles.colorLavender, styles.font, styles.padding)}>{this.props.customer.mobilePhoneNumber}</div>
       </div>
     )
   }

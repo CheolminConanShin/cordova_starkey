@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react'
 
 var styles = {
-  backgroundColor: "rgb(86, 86, 86)",
+  backgroundColor: "#555250",
   color: "white",
   marginBottom: 5,
   fontSize: "2vw",
-  padding: "0px 0px 0px 5px"
+  padding: "0px 0px 0px 5px",
+  fontFamily: "BMhanna"
 }
 
 const Header = React.createClass({

@@ -1,3 +1,38 @@
+/* baemin font */
+@font-face {
+  font-family: BMdohyeon;
+  src: url("./BMDOHYEON_otf.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BMhanna;
+  src: url("./BMHANNA_11yrs_otf.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NanumGothic;
+  src: url("./NanumGothic.otf") format("opentype");
+}
+
+#root {
+  font-family: BMdohyeon;
+  color: "#555250";
+}
+
+.row {
+  height: 3.5vh;
+  display: flex;
+  display: -webkit-flex;
+  border-bottom: 1px solid #E8E0DC;
+}
+
+[class*="col-"]{
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; /* column | row */
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;

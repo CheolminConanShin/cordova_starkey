@@ -1,6 +1,9 @@
 import React from 'react'
 var Sidebar = require('react-sidebar').default;
 import SideBarContents from './SideBarContents'
+import Hamburger from './Hamburger'
+import CustomerListView from '../CustomerListView'
+import ButtonView from '../ButtonView'
 
 export default class ReactSideBarComponent extends React.Component {
   constructor(props){
@@ -37,13 +40,13 @@ export default class ReactSideBarComponent extends React.Component {
   }
 
   render() {
-    return (
+    console.log(this.props.content)
+    return (</div>
       <Sidebar sidebar={SideBarContents}
                open={this.state.sidebarOpen}
                docked={this.state.sidebarDocked}
-               onSetOpen={this.onSetSidebarOpen}>
-          <div>Main content</div>
-          <button onClick={() => this.onSetSidebarOpen(true)} className="btn btn-primary">open side bar</button>
+               onSetOpen={this.onSetSidebarOpen}></div>
+               {this.props.content}
       </Sidebar>
     );
   }

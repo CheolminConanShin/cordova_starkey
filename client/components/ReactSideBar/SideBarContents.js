@@ -1,9 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const styles = {
   menuMargin: {
     marginBottom: "5px"
   },
+
   background: {
     height: "100%",
     backgroundColor: "black",
@@ -12,10 +14,10 @@ const styles = {
 }
 
 const SideBarContents =
-<div style={styles.background}>
-  <div style={styles.menuMargin}><a id="home" className="menu-item" href="/">메뉴</a></div>
-  <div style={styles.menuMargin}><a id="customerList" className="menu-item" href="/#/customerListView">고객리스트</a></div>
-  <div style={styles.menuMargin}><a id="contact" className="menu-item" href="/contact">테스트</a></div>
+<div id="openedSideBar" style={styles.background}>
+  <div style={styles.menuMargin}><Link to="/">메뉴</Link></div>
+  <div style={styles.menuMargin}><Link to="/customerListView">고객리스트</Link></div>
+  <div style={styles.menuMargin}><Link to="/test">테스트</Link></div>
 </div>
 
 export default SideBarContents
