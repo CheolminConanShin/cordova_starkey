@@ -1,7 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 import {Grid, Row, Col, Clearfix} from 'react-bootstrap'
-import Header from './Header'
+import CustomerTableHeader from './CustomerTableHeader'
 import Firebase from '../../connector/Firebase'
 import Customer from './Customer'
 
@@ -38,7 +38,7 @@ export default class CustomerTable extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
+        <CustomerTableHeader/>
         {this.state.listitem}
       </div>
     )

@@ -6,18 +6,26 @@ import {
 import ButtonView from './ButtonView'
 import CustomerListView from './CustomerListView'
 import ReactBurgerMenu from './ReactBurgerMenu'
-import ReactSideBar from './ReactSideBar'
 const title = "고객 리스트"
+
+var styles = {
+  container: {
+    position: "fixed",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgb(245, 235, 220)"
+  }
+}
 
 export default class App extends React.Component {
   render() {
     return(
       <Router>
-        <div>
+        <div style={styles.container}>
           <Route exact path="/" component={ButtonView}/>
           <Route exact path="/customerListView" component={CustomerListView}/>
-          <Route exact path="/reactBurgerMenu" component={ReactBurgerMenu}/>
-          <Route exact path="/reactSideBar" component={ReactSideBar}/>
+          <Route exact path="/addNewCustomerView" component={ReactBurgerMenu}/>
+          <Route exact path="/reactSideBar" component={ReactBurgerMenu}/>
         </div>
       </Router>
     )
