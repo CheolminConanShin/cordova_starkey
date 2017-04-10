@@ -6,6 +6,7 @@ import {
 import ButtonView from './ButtonView'
 import CustomerListView from './CustomerListView'
 import ReactBurgerMenu from './ReactBurgerMenu'
+import NewCustomerView from './NewCustomerView'
 const title = "고객 리스트"
 
 var styles = {
@@ -24,7 +25,7 @@ export default class App extends React.Component {
         <div style={styles.container}>
           <Route exact path="/" component={ButtonView}/>
           <Route exact path="/customerListView" component={CustomerListView}/>
-          <Route exact path="/addNewCustomerView" component={ReactBurgerMenu}/>
+          <Route exact path="/addNewCustomerView" component={NewCustomerView}/>
           <Route exact path="/reactSideBar" component={ReactBurgerMenu}/>
         </div>
       </Router>

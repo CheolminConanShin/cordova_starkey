@@ -16,7 +16,8 @@ const styles = {
 const SideBarContents =
 <div id="openedSideBar" style={styles.background}>
   <div style={styles.menuMargin}><Link to="/">메뉴</Link></div>
-  <div style={styles.menuMargin}><Link to="/customerListView">고객리스트</Link></div>
+  <div style={styles.menuMargin}><Link to="/customerListView">회원보기</Link></div>
+  <div style={styles.menuMargin}><Link to="/addNewCustomerView">회원추가</Link></div>
   <div style={styles.menuMargin}><Link to="/reactSideBar">사이드바</Link></div>
 </div>
 
